@@ -74,7 +74,7 @@ public class Calc {
             if (!isFirstNumArab && !isSecondNumArab && !b && symbol.equals("-")) {
                 throw new IOException("т.к. в римской системе нет отрицательных чисел.");
             }
-            if (!isFirstNumArab && !isSecondNumArab && b) {
+            if (!isFirstNumArab && !isSecondNumArab) {
                 String resultRoman = convertNumToRoman(result);
                 System.out.println(resultRoman);
 
